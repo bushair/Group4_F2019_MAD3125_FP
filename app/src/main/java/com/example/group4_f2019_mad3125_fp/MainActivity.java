@@ -87,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_home:
                         openFragment(0);
                         break;
+                    case R.id.nav_employee_payroll:
+                        openFragment(1);
+                        break;
                 }
             }
 
