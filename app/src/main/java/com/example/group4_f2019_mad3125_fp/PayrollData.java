@@ -34,5 +34,10 @@ public class PayrollData
         return plate;
     }
 
+    public void setPlate(String plate)
+    {
+        this.plate = plate;
+    }
+
 
 }
