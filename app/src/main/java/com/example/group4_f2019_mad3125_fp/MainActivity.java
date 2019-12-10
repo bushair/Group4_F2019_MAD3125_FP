@@ -84,7 +84,9 @@ public class MainActivity extends AppCompatActivity {
             {
                 switch (menuItem.getItemId())
                 {
-                   
+                    case R.id.nav_home:
+                        openFragment(0);
+                        break;
                 }
             }
 
