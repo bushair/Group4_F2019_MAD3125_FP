@@ -111,6 +111,10 @@ public class MainActivity extends AppCompatActivity {
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCancelable(false);
+        dialog.setContentView(R.layout.custom_dialog_layout);
+
+        Button dialogButton = (Button) dialog.findViewById(R.id.btn_dialog);
+
     }
 }
 
