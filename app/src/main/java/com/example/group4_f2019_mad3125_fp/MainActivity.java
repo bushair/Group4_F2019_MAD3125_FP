@@ -77,13 +77,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setUpNavigationView() {
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
-        {
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
-            {
-                switch (menuItem.getItemId())
-                {
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
                     case R.id.nav_home:
                         openFragment(0);
                         break;
@@ -97,18 +94,22 @@ public class MainActivity extends AppCompatActivity {
                         showHelpDialog();
                         menuItem.setChecked(false);
                         break;
-
-                }case R.id.nav_logout:
-                showLogoutDialog();
-                menuItem.setChecked(false);
-                break;
-            }
+                    case R.id.nav_logout:
+                        showLogoutDialog();
+                        menuItem.setChecked(false);
+                        break;
+                }
 
                 drawer.closeDrawers();
                 return true;
-        }
-    });
-}
             }
+        });
+    }
+
+    private void showHelpDialog()
+    {
+    }
+}
+
 
 
