@@ -41,6 +41,14 @@ public class PayrollAdaptor extends RecyclerView.Adapter<PayrollAdapter.ViewHold
         return payrollDataList.size();
     }
 
+    public class ViewHolder extends RecyclerView.ViewHolder
+    {
+        public ViewHolder(@NonNull View itemView)
+        {
+            
+        }
+    }
+
 
 
 }
