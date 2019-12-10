@@ -44,5 +44,10 @@ public class PayrollData
         return job;
     }
 
+    public void setJob(String job)
+    {
+        this.job = job;
+    }
+
 
 }
