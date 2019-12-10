@@ -114,8 +114,21 @@ public class MainActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.custom_dialog_layout);
 
         Button dialogButton = (Button) dialog.findViewById(R.id.btn_dialog);
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
 
     }
+
+    private void openFragment(int position)
+        
+
+}
 }
 
 
