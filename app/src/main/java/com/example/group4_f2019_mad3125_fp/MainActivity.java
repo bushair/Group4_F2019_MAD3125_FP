@@ -97,7 +97,18 @@ public class MainActivity extends AppCompatActivity {
                         showHelpDialog();
                         menuItem.setChecked(false);
                         break;
-                }
+
+                }case R.id.nav_logout:
+                showLogoutDialog();
+                menuItem.setChecked(false);
+                break;
             }
 
+                drawer.closeDrawers();
+                return true;
+        }
+    });
 }
+            }
+
+
