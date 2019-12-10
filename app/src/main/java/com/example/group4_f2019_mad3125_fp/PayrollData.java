@@ -6,12 +6,9 @@ public class PayrollData
     private String plate;
     private String job;
 
-    public PayrollData()
-    {
 
-    }
 
-    public PayrollData(String name, String plate, String)
+    public PayrollData(String name, String plate, String job)
     {
         this.name = name;
         this.plate = plate;

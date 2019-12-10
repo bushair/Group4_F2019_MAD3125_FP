@@ -9,13 +9,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
-public class PayrollAdaptor extends RecyclerView.Adapter<PayrollAdapter.ViewHolder>
+public class PayrollAdaptor extends RecyclerView.Adapter<PayrollAdaptor.ViewHolder>
 {
     private Context context;
     private List<PayrollData> payrollDataList;
     private OnPayrollClicked onPayrollClicked;
 
-    public PayrollAdapter(Context context, List<PayrollData> payrollDataList, OnPayrollClicked onPayrollClicked) {
+    public PayrollAdaptor(Context context, List<PayrollData> payrollDataList, OnPayrollClicked onPayrollClicked) {
         this.context = context;
         this.payrollDataList = payrollDataList;
         this.onPayrollClicked = onPayrollClicked;
@@ -28,7 +28,6 @@ public class PayrollAdaptor extends RecyclerView.Adapter<PayrollAdapter.ViewHold
         View view = LayoutInflater.from(context).inflate(R.layout.single_row_payrol_list, parent, false);
         return new ViewHolder(view);
     }
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position)
     {
@@ -41,13 +40,19 @@ public class PayrollAdaptor extends RecyclerView.Adapter<PayrollAdapter.ViewHold
         return payrollDataList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder
-    {
-        public ViewHolder(@NonNull View itemView)
-        {
-            
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onPayrollClicked.onPayrollClicked(getAdapterPosition());
+                }
+            });
         }
     }
+}
 
 
 
