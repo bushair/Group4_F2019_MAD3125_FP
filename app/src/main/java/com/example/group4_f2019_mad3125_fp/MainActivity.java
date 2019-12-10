@@ -130,9 +130,13 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
                 android.R.anim.fade_out);
-        
+        fragmentTransaction.replace(R.id.main_frame, fragments[position]);
+        fragmentTransaction.commitAllowingStateLoss();
+    }
 }
-}
+
+
+
 
 
 
