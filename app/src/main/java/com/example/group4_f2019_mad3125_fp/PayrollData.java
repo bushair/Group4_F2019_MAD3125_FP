@@ -14,6 +14,7 @@ public class PayrollData
     public PayrollData(String name, String plate, String)
     {
         this.name = name;
+        this.name = name;
 
     }
 }
