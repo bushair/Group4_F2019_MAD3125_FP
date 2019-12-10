@@ -29,5 +29,10 @@ public class PayrollData
         this.name = name;
     }
 
+    public String getPlate()
+    {
+        return plate;
+    }
+
 
 }
