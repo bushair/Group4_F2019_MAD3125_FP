@@ -12,5 +12,17 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        int TIME_OUT = 2000;
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent toSlider = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(toSlider);
+                finish();
+            }
+        }, TIME_OUT);
     }
+
+
 }
