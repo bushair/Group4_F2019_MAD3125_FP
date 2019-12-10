@@ -90,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_employee_payroll:
                         openFragment(1);
                         break;
+                    case R.id.nav_list_payroll:
+                        openFragment(2);
+                        break;
                 }
             }
 
