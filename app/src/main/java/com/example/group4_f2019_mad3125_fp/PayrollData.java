@@ -4,4 +4,5 @@ public class PayrollData
 {
     private String name;
     private String plate;
+    private String job;
 }
