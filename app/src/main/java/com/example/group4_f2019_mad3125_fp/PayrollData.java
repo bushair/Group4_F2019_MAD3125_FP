@@ -39,5 +39,10 @@ public class PayrollData
         this.plate = plate;
     }
 
+    public String getJob()
+    {
+        return job;
+    }
+
 
 }
