@@ -78,5 +78,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpNavigationView() {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
+        {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
+            {
+                switch (menuItem.getItemId())
+                {
+                   
+                }
+            }
 
 }
