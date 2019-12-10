@@ -126,8 +126,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openFragment(int position)
+    {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
+                android.R.anim.fade_out);
         
-
 }
 }
 
