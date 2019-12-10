@@ -93,6 +93,10 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_list_payroll:
                         openFragment(2);
                         break;
+                    case R.id.nav_help:
+                        showHelpDialog();
+                        menuItem.setChecked(false);
+                        break;
                 }
             }
 
