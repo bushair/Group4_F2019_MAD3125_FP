@@ -108,6 +108,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void showHelpDialog()
     {
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        
     }
 }
 
