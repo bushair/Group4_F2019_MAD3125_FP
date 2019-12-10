@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     {
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        
+        dialog.setCancelable(false);
     }
 }
 
