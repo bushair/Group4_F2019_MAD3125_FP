@@ -41,4 +41,18 @@
             android:padding="10dp"
             android:layout_margin="5dp"
             android:textSize="14sp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:id="@+id/vehicle_layout"
+            android:visibility="gone">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Car"
+                android:padding="10dp"
+                android:background="@color/white"/>
 
