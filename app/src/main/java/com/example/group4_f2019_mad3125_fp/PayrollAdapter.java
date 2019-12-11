@@ -9,13 +9,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
-public class PayrollAdaptor extends RecyclerView.Adapter<PayrollAdaptor.ViewHolder>
+public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHolder>
 {
     private Context context;
     private List<PayrollData> payrollDataList;
     private OnPayrollClicked onPayrollClicked;
 
-    public PayrollAdaptor(Context context, List<PayrollData> payrollDataList, OnPayrollClicked onPayrollClicked) {
+    public PayrollAdapter(Context context, List<PayrollData> payrollDataList, OnPayrollClicked onPayrollClicked) {
         this.context = context;
         this.payrollDataList = payrollDataList;
         this.onPayrollClicked = onPayrollClicked;
@@ -23,20 +23,18 @@ public class PayrollAdaptor extends RecyclerView.Adapter<PayrollAdaptor.ViewHold
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
-    {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.single_row_payrol_list, parent, false);
         return new ViewHolder(view);
     }
+
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position)
-    {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
     }
 
     @Override
-    public int getItemCount()
-    {
+    public int getItemCount() {
         return payrollDataList.size();
     }
 
@@ -52,8 +50,4 @@ public class PayrollAdaptor extends RecyclerView.Adapter<PayrollAdaptor.ViewHold
             });
         }
     }
-}
-
-
-
 }

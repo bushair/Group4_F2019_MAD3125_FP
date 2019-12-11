@@ -14,30 +14,28 @@
             android:hint="Name"
             android:textSize="14sp"
             android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@color/white"/>
+            android:layout_margin="5dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Date of birth"
             android:textSize="14sp"
             android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@color/white"/>
+            android:layout_margin="5dp"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Earning"
             android:textSize="14sp"
             android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@color/white"/>
+            android:layout_margin="5dp" />
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/has_vehicle_check"
             android:text="Has vehicle"
-            android:background="@color/white"
             android:padding="10dp"
             android:layout_margin="5dp"
             android:textSize="14sp"/>
@@ -53,8 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Car"
-                android:padding="10dp"
-                android:background="@color/white"/>
+                android:padding="10dp" />
             <RelativeLayout
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
@@ -64,8 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Motorcycle"
-                android:padding="10dp"
-                android:background="@color/white"/>
+                android:padding="10dp" />
         </RadioGroup>
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,26 +77,22 @@
                 android:hint="Make"
                 android:textSize="14sp"
                 android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/white"/>
+                android:layout_margin="5dp" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Plate"
                 android:textSize="14sp"
                 android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/white"/>
+                android:layout_margin="5dp" />
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Job Details"
-            android:textColor="@color/black"
             android:textSize="14sp"
             android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@color/white"/>
+            android:layout_margin="5dp" />
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,7 +105,6 @@
                 android:id="@+id/rb_full_time"
                 android:text="Full Time"
                 android:padding="10dp"
-                android:background="@color/white"
                 android:layout_margin="2dp"/>
             <RadioButton
                 android:layout_width="match_parent"
@@ -121,7 +112,6 @@
                 android:id="@+id/rb_intern"
                 android:text="Intern"
                 android:padding="10dp"
-                android:background="@color/white"
                 android:layout_margin="2dp"/>
             <RadioButton
                 android:layout_width="match_parent"
@@ -129,7 +119,6 @@
                 android:id="@+id/rb_part_time"
                 android:text="Part Time"
                 android:padding="10dp"
-                android:background="@color/white"
                 android:layout_margin="2dp"/>
         </RadioGroup>
         <RadioGroup
@@ -147,16 +136,14 @@
                 android:id="@+id/rb_commission_based"
                 android:text="Commission Based Part Time"
                 android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/white"/>
+                android:layout_margin="5dp" />
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/rb_fixed_based"
                 android:text="Fixed Based Part Time"
                 android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/white"/>
+                android:layout_margin="5dp" />
         </RadioGroup>
         <LinearLayout
             android:layout_width="match_parent"
@@ -172,16 +159,14 @@
                 android:hint="Salary"
                 android:textSize="14sp"
                 android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/white"/>
+                android:layout_margin="5dp" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Bonus"
                 android:textSize="14sp"
                 android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/white"/>
+                android:layout_margin="5dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -197,8 +182,7 @@
                 android:hint="School Name"
                 android:textSize="14sp"
                 android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/white"/>
+                android:layout_margin="5dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -214,16 +198,14 @@
                 android:hint="Rate"
                 android:textSize="14sp"
                 android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/white"/>
+                android:layout_margin="5dp" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Hours worked"
                 android:textSize="14sp"
                 android:padding="10dp"
-                android:layout_margin="5dp"
-                android:background="@color/white"/>
+                android:layout_margin="5dp" />
         </LinearLayout>
         <Button
             android:layout_width="match_parent"
