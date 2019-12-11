@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
-public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHolder>
-{
+public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHolder> {
     private Context context;
     private List<PayrollData> payrollDataList;
     private OnPayrollClicked onPayrollClicked;
