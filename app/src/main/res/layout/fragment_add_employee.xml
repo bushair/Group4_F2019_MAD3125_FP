@@ -149,6 +149,16 @@
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:background="@color/white"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_fixed_based"
+                android:text="Fixed Based Part Time"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@color/white"/>
+        </RadioGroup>
+
 
 
 
